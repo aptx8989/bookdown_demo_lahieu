@@ -1,5 +1,10 @@
 # Introduction {#intro}
 
+```{r}
+library(dplyr)
+library(kableExtra)
+```
+
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
@@ -9,6 +14,8 @@ par(mar = c(4, 4, .1, .1))
 plot(pressure, type = 'b', pch = 19)
 ```
 
+This is the reference part of equation \@ref(eq:random).
+
 Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 
 ```{r nice-tab, tidy=FALSE}
@@ -17,5 +24,49 @@ knitr::kable(
   booktabs = TRUE
 )
 ```
+
+```{r class.source = "watch-out", include=TRUE}
+Comp <- c("B","G","BB","BG","GB","GGB","GBB","Total")
+Likcomp1 <- c("$p_B$",
+              "($1-p_B$)",
+              "$p^2_B$",
+              "$p_B(1-p_B)$",
+              "$(1-p_B)p_B$",
+              "$(1-p_B)^2 p_B$",
+              "$\\displaystyle\\frac{(1- \\lambda^R)\\beta^2_B}{2 \\gamma}$",
+              " ")
+Numfamis <- c(6,7,5,4,5,1,2,30)
+Likcomp2 <- c("$p^6_B$",
+              "$(1-p_B)^7$",
+              "$p^{10}_B$",
+              "$p^4_B(1-p_B)^4$",
+              "$(1-p_B)^5 p^5_B$",
+              "$(1-p_B)^2 p_B$",
+              "$(1-p_B)^2 p^4_B \\geq \\gamma$",
+              " ")
+```
+
+```{r table2chp2, echo=FALSE}
+#lik50.tab
+table2chp2 <- data.frame(Comp, Likcomp1, Numfamis, Likcomp2)
+kable(table2chp2, booktabs = T,
+      col.names = c("Composition",
+        "Likelihood contribution for one family",
+        "Number of families",
+        "Likelihood contribution for multiple families"),
+      caption = "The likelihood factors for the hypothetical data set of n=50 children.", 
+      escape=F) %>%
+  column_spec(c(2,4), width = "4cm") %>% 
+  kable_styling(latex_options = "scale_down")
+```
+
+\begin{align}
+ \hat{p}_{B|\textrm{B Bias}}&= \frac{1131}{1131+1164}\\
+ & =  0.4928 \\
+ &  \\
+ \hat{p}_{B|\textrm{G Bias}}&=\frac{1124}{1124+973}\\
+&= 0.5360
+(\#eq:random)
+\end{align}
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
