@@ -2,3 +2,5 @@ realintro
 tại-sao-cần-hàm-f
 dự-báo
 suy-diễn
+cách-ước-lượng-hàm-f
+ước-lượng-tham-số-parametric-methods

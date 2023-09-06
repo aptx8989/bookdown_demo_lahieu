@@ -83,4 +83,11 @@ Ngoài mục đích xây dựng hàm f để dự đoán các giá trị của Y
 
 ## Cách ước lượng hàm f
 
+Trong quyển sách này, chúng ta sẽ được học những phương pháp tuyến tính và phi tuyến tính để ước lượng hàm f. Tuy các phương pháp này khác nhau, nhưng chúng đều có một vài điểm chung nhất định, và tôi sẽ trình bày các điểm chung đó trong phần này. Trước tiên, giả sử chúng ta có một bộ số liệu gồm n quan sát khác nhau. Các quan sát này được gọi là dữ liệu huấn luyện (training data) bởi vì chúng ta sẽ sử dụng những dữ liệu này cùng với các phương pháp thống kê để ước lượng hàm f. 
+Để thuận tiện, ta có thể coi $x_{ij}$ là giá trị biến độc lập thứ j của quan sát thứ i, với $i = 1,2,...,n$ và $j = 1,2,...,p$. Tương tự, ta cũng coi $y_i$ là biến phụ thuộc của quan sát thứ i. Vậy nên, dữ liệu huấn luyện sẽ bao gồm ${(x_1, y_1), (x_2, y_2), ... ,(x_n, y_n)}$ với $x = (x_{i1}, x_{i2}, ... , x_{ip})^T$.
+
+Mục tiêu cao nhất của húng ta là sử dụng các phương pháp thống kê với dữ liệu đào tạo để ước lượng hàm f, hay nói cách khác là tìm một hàm $\hat{f}$ sao cho $Y \approx \hat{f}(X)$ với mọi quan sát (X,Y). Các phương pháp ước lượng với dữ liệu này, nói một cách tổng quát hơn, có thể chia ra làm hai loại là các phương pháp sử dụng tham số (parametric methods) và các phương pháp không sử dụng tham số (non-parametric methods).
+
+### Ước lượng tham số (parametric methods)
+
 
