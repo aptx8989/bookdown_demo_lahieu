@@ -3,7 +3,7 @@ tab:nice-tab
 tab:table2chp2
 eq:random
 intro
-realintro
+real-introduction
 tại-sao-cần-hàm-f
 dự-báo
 suy-diễn

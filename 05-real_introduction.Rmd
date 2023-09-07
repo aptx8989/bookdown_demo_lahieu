@@ -1,4 +1,4 @@
-# Real Introduction {#realintro}
+# Real Introduction
 
 ```{r}
 library(dplyr)
@@ -98,6 +98,8 @@ Phương pháp ước lượng tham số có thể được chia ra làm hai bư
 f(X) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_p X_p
 \end{align}
 
+Một khi chúng ta giả định rằng hàm f là hàm tuyến tính, thì vấn đề ước lượng hàm f lại đơn giản hơn rất nhiều. Đó là thay vì chúng ta phải ước lượng một hàm f(X) bất kỳ có p chiều, vốn sẽ làm chậm tốc độ tính toán của máy tính đi rất nhiều, thì chúng ta chỉ cần phải ước lượng p+1 tham số $\beta_0, \beta_1, \beta_2, ... , \beta_p$.
+
 2. Sau khi chúng ta lựa chọn được kiểu hàm mà chúng ta muốn, chúng ta sẽ cần thực hiện thêm các quy trình kỹ thuật thống kê khác nhau với dữ liệu đào tạo để cho ra mô hình phù hợp với dữ liệu nhất.
 
 Hàm bên trên là hàm tuyến tính, một loại hàm vô cùng phổ biến và cơ bản mà hầu hết người xây dựng mô hình phải biết khi xây dựng hàm f. Người ta hướng đến việc tham số $\beta_0, \beta_1, \beta_2, ... , \beta_p$ rất hiệu quả với mục tiêu là tìm ra các tham số sao cho:
@@ -106,5 +108,5 @@ Hàm bên trên là hàm tuyến tính, một loại hàm vô cùng phổ biến
 Y \approx \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_p X_p
 \end{align}
 
-Một khi chúng ta giả thiết rằng hàm f là hàm tuyến tính, việc ước lượng các tham số của hàm f khá là đơn giản và đã có rất nhiều phương pháp làm điều này, chúng ta sẽ tìm hiểu kỹ hơn về cách ước lượng các tham số $\beta$ trong phần sau.
+Một khi chúng ta giả thiết rằng hàm f là hàm tuyến tính, việc ước lượng các tham số của hàm f khá là đơn giản và các nhà nghiên cứu đã chỉ ra rất nhiều phương pháp để ước lượng, chúng ta sẽ tìm hiểu kỹ hơn về cách ước lượng các tham số $\beta$ trong phần sau.
 

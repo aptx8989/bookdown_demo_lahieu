@@ -140,16 +140,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="realintro.html"><a href="realintro.html"><i class="fa fa-check"></i><b>2</b> Real Introduction</a>
+<li class="chapter" data-level="2" data-path="real-introduction.html"><a href="real-introduction.html"><i class="fa fa-check"></i><b>2</b> Real Introduction</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="realintro.html"><a href="realintro.html#tại-sao-cần-hàm-f"><i class="fa fa-check"></i><b>2.1</b> Tại sao cần hàm f?</a>
+<li class="chapter" data-level="2.1" data-path="real-introduction.html"><a href="real-introduction.html#tại-sao-cần-hàm-f"><i class="fa fa-check"></i><b>2.1</b> Tại sao cần hàm f?</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="realintro.html"><a href="realintro.html#dự-báo"><i class="fa fa-check"></i><b>2.1.1</b> Dự báo</a></li>
-<li class="chapter" data-level="2.1.2" data-path="realintro.html"><a href="realintro.html#suy-diễn"><i class="fa fa-check"></i><b>2.1.2</b> Suy diễn</a></li>
+<li class="chapter" data-level="2.1.1" data-path="real-introduction.html"><a href="real-introduction.html#dự-báo"><i class="fa fa-check"></i><b>2.1.1</b> Dự báo</a></li>
+<li class="chapter" data-level="2.1.2" data-path="real-introduction.html"><a href="real-introduction.html#suy-diễn"><i class="fa fa-check"></i><b>2.1.2</b> Suy diễn</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="realintro.html"><a href="realintro.html#cách-ước-lượng-hàm-f"><i class="fa fa-check"></i><b>2.2</b> Cách ước lượng hàm f</a>
+<li class="chapter" data-level="2.2" data-path="real-introduction.html"><a href="real-introduction.html#cách-ước-lượng-hàm-f"><i class="fa fa-check"></i><b>2.2</b> Cách ước lượng hàm f</a>
 <ul>
-<li class="chapter" data-level="2.2.1" data-path="realintro.html"><a href="realintro.html#ước-lượng-tham-số-parametric-methods"><i class="fa fa-check"></i><b>2.2.1</b> Ước lượng tham số (parametric methods)</a></li>
+<li class="chapter" data-level="2.2.1" data-path="real-introduction.html"><a href="real-introduction.html#ước-lượng-tham-số-parametric-methods"><i class="fa fa-check"></i><b>2.2.1</b> Ước lượng tham số (parametric methods)</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -172,10 +172,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="realintro" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Real Introduction<a href="realintro.html#realintro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="realintro.html#cb11-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb11-2"><a href="realintro.html#cb11-2" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code></pre></div>
+<div id="real-introduction" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Real Introduction<a href="real-introduction.html#real-introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="real-introduction.html#cb11-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb11-2"><a href="real-introduction.html#cb11-2" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code></pre></div>
 <p>Để bắt đầu với Khoa học dữ liệu, chúng ta sẽ đi từ một vài ví dụ đơn giản nhất. Đặt trong trường hợp chúng ta là người phân tích khoa học dữ liệu tại một bệnh viện, một bài toán đơn giản thường được đặt ra là dự đoán khả năng một người bất kỳ nào đó bị bệnh dựa trên các thông tin mà ta biết về người đó. Ví dụ, để tính xác suất của một người bị bệnh tim lần 2, sau có thông tin là người đó đã bị bệnh tim lần 1, dựa vào các thông tin khác như chủng tộc, giới tính, tuổi, tiền sử bệnh lý, lối sống của bệnh nhân đó.</p>
 <p>Quyển sách này sẽ dạy bạn cách để học từ dữ liệu. Thông thường, chúng ta sẽ có một thước đo kết quả (hay còn gọi là các biến phụ thuộc), thường là theo biến định lượng (ví dụ như giá cổ phiếu, doanh thu của công ty), hoặc biến định tính (ví dụ như có hay không chuyện người đó bị bệnh tim), và chúng ta sẽ dự đoán nó từ các đặc trưng (hay còn gọi là các biến độc lập).</p>
 <p>Để xây dựng được những mô hình tốt, nghĩa là mô hình có thể đưa ra dự đoán với độ chính xác cao, chúng ta cần phải sử dụng dữ liệu sao cho thật hợp lý. Thử tưởng tượng, mục đích của dự đoán là dự báo những điều chưa được biết. nếu như bạn xây dựng một hàm f để dự đoán kết quả trên toàn bộ dữ liệu bạn có, thì làm sao bạn có thể biết được hàm f đó có hoạt động tốt trên thực tế để chọn ra hàm f phù hợp nhất? Khi hàm f được xây dựng trên toàn bộ tập dữ liệu, các tham số của hàm đó sẽ được tính toán để phù hợp với dữ liệu đó nhất, nhưng có khả năng chúng sẽ lại không phù hợp với các dữ liệu được đưa vào từ bên ngoài.</p>
@@ -198,10 +198,10 @@ Y = f(X) + \epsilon
 \end{align}\]</span></p>
 <p>Trong đó, f là một hàm cố định, nhưng chưa xác định của <span class="math inline">\(X_1,X_2,X_3,…,X_p\)</span>, và bên cạnh đó <span class="math inline">\(\epsilon\)</span> là random error term, độc lập với X và có giá trị kỳ vọng bằng 0. Trong công thức trên, f thể hiện systematic information mà X cung cấp về Y. <strong>(Xem xét đưa thêm ví dụ vào sau phần này).</strong></p>
 <div id="tại-sao-cần-hàm-f" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Tại sao cần hàm f?<a href="realintro.html#tại-sao-cần-hàm-f" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">2.1</span> Tại sao cần hàm f?<a href="real-introduction.html#tại-sao-cần-hàm-f" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Có hai lý do chính để chúng ta tìm ra hàm f, đó là phục vụ cho mục đích dự báo hoặc suy diễn thống kê. Trước tiên, chúng ta sẽ đi sâu vào mục đích thứ nhất, dự báo.</p>
 <div id="dự-báo" class="section level3 hasAnchor" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Dự báo<a href="realintro.html#dự-báo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">2.1.1</span> Dự báo<a href="real-introduction.html#dự-báo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Trong thực tế, có rất nhiều trường hợp, chúng ta có đầy đủ thông tin về biến độc lập X, nhưng chúng ta lại rất khó có đầy đủ thông tin về biến phụ thuộc Y. Trong hệ thống mô hình dự báo của chúng ta, dựa trên việc biến sai số <span class="math inline">\(\epsilon\)</span> có giá trị trung bình bằng 0, chúng ta có thể dự đoán Y bằng công thức:</p>
 <p><span class="math display">\[\begin{align}
 \hat{Y} = \hat{f}(X)
@@ -220,7 +220,7 @@ E(Y-\hat{y})^2 &amp;= E[f(X) + \epsilon - \hat{f}(X)]^2 \\
 <p>Quyển sách này sẽ tập trung vào các kỹ thuật thống kê giúp ước lượng hàm f với mục tiêu là giảm tối đa sai số có thể giảm. Tuy nhiên, chúng ta luôn cần chú ý rằng sai số không thể giảm sẽ vẫn luôn luôn tạo ra một giới hạn trên cho sự chính xác của dự báo. Và giới hạn trên này luôn luôn là một ẩn số trong thực tế.</p>
 </div>
 <div id="suy-diễn" class="section level3 hasAnchor" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Suy diễn<a href="realintro.html#suy-diễn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">2.1.2</span> Suy diễn<a href="real-introduction.html#suy-diễn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Ngoài mục đích xây dựng hàm f để dự đoán các giá trị của Y. Người ta còn muốn hiểu hơn về mối liên hệ giữa Y và <span class="math inline">\(X_1, X_2, X_3,...,X_p\)</span>. Trong trường hợp này, chúng ta vẫn sẽ phải ước lượng hàm f, tuy nhiên mục tiêu của chúng ta không phải là dự báo giá trị của Y. Bây giờ, hàm <span class="math inline">\(\hat{f}\)</span> không thể được coi là hộp đen (black box) nữa, mà chúng ta cần phải biết chính xác dạng của hàm <span class="math inline">\(\hat{f}\)</span> đó là gì. Khi thực hiện các phương pháp thống kê suy diễn, chúng ta thường tập trung vào trả lời các câu hỏi như sau:</p>
 <ul>
 <li><em>Biến độc lập (predictor) nào có mối quan hệ với biến phụ thuộc?</em> Câu hỏi này thường được đặt ra trong trường hợp dữ liệu của chúng ta chỉ có một lượng nhỏ biến độc lập X có liên quan đến biến Y. Việc tìm ra một số lượng nhỏ các biến độc lập X liên hệ với biến Y giữa một số lượng biến độc lập X lớn hơn có rất nhiều tác dụng trong thực tế. Ví dụ như trong bài toán tính toán khả năng bị sốc phản vệ của bệnh nhân khi dùng thuốc, khi đó biến Y thể hiện khả năng bệnh nhân đó bị sốc phản vệ, các biến X chứa thông tin cá nhân của bệnh nhân như tuổi, cân nặng, tiền sử bệnh; trong trường hợp này nếu như chúng ta tìm ra được yếu tố (ở đây được thể hiện bởi biến X) nào có ảnh hưởng nhiều đến biến Y thì có thể các bác sĩ sẽ tập trung tìm ra cách cải thiện những yếu tố đó, giúp cho bệnh nhân giảm khả năng bị sốc phản vệ.</li>
@@ -231,12 +231,12 @@ E(Y-\hat{y})^2 &amp;= E[f(X) + \epsilon - \hat{f}(X)]^2 \\
 </div>
 </div>
 <div id="cách-ước-lượng-hàm-f" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Cách ước lượng hàm f<a href="realintro.html#cách-ước-lượng-hàm-f" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">2.2</span> Cách ước lượng hàm f<a href="real-introduction.html#cách-ước-lượng-hàm-f" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Trong quyển sách này, chúng ta sẽ được học những phương pháp tuyến tính và phi tuyến tính để ước lượng hàm f. Tuy các phương pháp này khác nhau, nhưng chúng đều có một vài điểm chung nhất định, và tôi sẽ trình bày các điểm chung đó trong phần này. Trước tiên, giả sử chúng ta có một bộ số liệu gồm n quan sát khác nhau. Các quan sát này được gọi là dữ liệu huấn luyện (training data) bởi vì chúng ta sẽ sử dụng những dữ liệu này cùng với các phương pháp thống kê để ước lượng hàm f. 
 Để thuận tiện, ta có thể coi <span class="math inline">\(x_{ij}\)</span> là giá trị biến độc lập thứ j của quan sát thứ i, với <span class="math inline">\(i = 1,2,...,n\)</span> và <span class="math inline">\(j = 1,2,...,p\)</span>. Tương tự, ta cũng coi <span class="math inline">\(y_i\)</span> là biến phụ thuộc của quan sát thứ i. Vậy nên, dữ liệu huấn luyện sẽ bao gồm <span class="math inline">\({(x_1, y_1), (x_2, y_2), ... ,(x_n, y_n)}\)</span> với <span class="math inline">\(x = (x_{i1}, x_{i2}, ... , x_{ip})^T\)</span>.</p>
 <p>Mục tiêu cao nhất của húng ta là sử dụng các phương pháp thống kê với dữ liệu đào tạo để ước lượng hàm f, hay nói cách khác là tìm một hàm <span class="math inline">\(\hat{f}\)</span> sao cho <span class="math inline">\(Y \approx \hat{f}(X)\)</span> với mọi quan sát (X,Y). Các phương pháp ước lượng với dữ liệu này, nói một cách tổng quát hơn, có thể chia ra làm hai loại là các <strong>phương pháp sử dụng tham số (parametric methods)</strong> và các <strong>phương pháp không sử dụng tham số (non-parametric methods).</strong></p>
 <div id="ước-lượng-tham-số-parametric-methods" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Ước lượng tham số (parametric methods)<a href="realintro.html#ước-lượng-tham-số-parametric-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">2.2.1</span> Ước lượng tham số (parametric methods)<a href="real-introduction.html#ước-lượng-tham-số-parametric-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Phương pháp ước lượng tham số có thể được chia ra làm hai bước chính:</p>
 <ol style="list-style-type: decimal">
 <li>Trước tiên, chúng ta phải đưa ra một giả thiết về dạng của hàm f. Ví dụ như hàm f là hàm tuyến tính, hoặc là hàm nghịch đảo, ở đây tác giả sẽ lấy ví dụ hàm f là hàm tuyến tính của X có dạng:</li>
