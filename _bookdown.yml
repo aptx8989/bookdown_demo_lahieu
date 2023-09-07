@@ -4,7 +4,7 @@ language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: true
-rmd_files: ["05-real_introduction.Rmd"]
+rmd_files: ["01-intro.Rmd", "05-real_introduction.Rmd"]
 fontsettings:
   theme: night
   family: serif

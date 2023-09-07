@@ -1,3 +1,8 @@
+fig:nice-fig
+tab:nice-tab
+tab:table2chp2
+eq:random
+intro
 realintro
 tại-sao-cần-hàm-f
 dự-báo
