@@ -2,6 +2,7 @@ fig:nice-fig
 tab:nice-tab
 tab:table2chp2
 eq:random
+basic-information
 intro
 real-introduction
 tại-sao-cần-hàm-f
