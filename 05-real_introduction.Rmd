@@ -90,4 +90,12 @@ Mục tiêu cao nhất của húng ta là sử dụng các phương pháp thốn
 
 ### Ước lượng tham số (parametric methods)
 
+Phương pháp ước lượng tham số có thể được chia ra làm hai bước chính:
 
+1. Trước tiên, chúng ta phải đưa ra một giả thiết về dạng của hàm f. Ví dụ như hàm f là hàm tuyến tính, hoặc là hàm nghịch đảo, ở đây tác giả sẽ lấy ví dụ hàm f là hàm tuyến tính của X có dạng:
+
+\begin{align}
+f(X) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_p X_p
+\end{align}
+
+Hàm bên trên là hàm tuyến tính, một loại hàm vô cùng phổ biến và cơ bản mà hầu hết người xây dựng mô hình phải biết khi xây dựng hàm f. Một khi chúng ta giả thiết rằng hàm f là hàm tuyến tính 

@@ -246,9 +246,17 @@ E(Y-\hat{y})^2 &amp;= E[f(X) + \epsilon - \hat{f}(X)]^2 \\
 <h2><span class="header-section-number">1.2</span> Cách ước lượng hàm f<a href="#cách-ước-lượng-hàm-f" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Trong quyển sách này, chúng ta sẽ được học những phương pháp tuyến tính và phi tuyến tính để ước lượng hàm f. Tuy các phương pháp này khác nhau, nhưng chúng đều có một vài điểm chung nhất định, và tôi sẽ trình bày các điểm chung đó trong phần này. Trước tiên, giả sử chúng ta có một bộ số liệu gồm n quan sát khác nhau. Các quan sát này được gọi là dữ liệu huấn luyện (training data) bởi vì chúng ta sẽ sử dụng những dữ liệu này cùng với các phương pháp thống kê để ước lượng hàm f. 
 Để thuận tiện, ta có thể coi <span class="math inline">\(x_{ij}\)</span> là giá trị biến độc lập thứ j của quan sát thứ i, với <span class="math inline">\(i = 1,2,...,n\)</span> và <span class="math inline">\(j = 1,2,...,p\)</span>. Tương tự, ta cũng coi <span class="math inline">\(y_i\)</span> là biến phụ thuộc của quan sát thứ i. Vậy nên, dữ liệu huấn luyện sẽ bao gồm <span class="math inline">\({(x_1, y_1), (x_2, y_2), ... ,(x_n, y_n)}\)</span> với <span class="math inline">\(x = (x_{i1}, x_{i2}, ... , x_{ip})^T\)</span>.</p>
-<p>Mục tiêu cao nhất của húng ta là sử dụng các phương pháp thống kê với dữ liệu đào tạo để ước lượng hàm f, hay nói cách khác là tìm một hàm <span class="math inline">\(\hat{f}\)</span> sao cho <span class="math inline">\(Y \approx \hat{f}(X)\)</span> với mọi quan sát (X,Y). Các phương pháp ước lượng với dữ liệu này, nói một cách tổng quát hơn, có thể chia ra làm hai loại là các phương pháp sử dụng tham số (parametric methods) và các phương pháp không sử dụng tham số (non-parametric methods).</p>
+<p>Mục tiêu cao nhất của húng ta là sử dụng các phương pháp thống kê với dữ liệu đào tạo để ước lượng hàm f, hay nói cách khác là tìm một hàm <span class="math inline">\(\hat{f}\)</span> sao cho <span class="math inline">\(Y \approx \hat{f}(X)\)</span> với mọi quan sát (X,Y). Các phương pháp ước lượng với dữ liệu này, nói một cách tổng quát hơn, có thể chia ra làm hai loại là các <strong>phương pháp sử dụng tham số (parametric methods)</strong> và các <strong>phương pháp không sử dụng tham số (non-parametric methods).</strong></p>
 <div id="ước-lượng-tham-số-parametric-methods" class="section level3 hasAnchor" number="1.2.1">
 <h3><span class="header-section-number">1.2.1</span> Ước lượng tham số (parametric methods)<a href="#ước-lượng-tham-số-parametric-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Phương pháp ước lượng tham số có thể được chia ra làm hai bước chính:</p>
+<ol style="list-style-type: decimal">
+<li>Trước tiên, chúng ta phải đưa ra một giả thiết về dạng của hàm f. Ví dụ như hàm f là hàm tuyến tính, hoặc là hàm nghịch đảo, ở đây tác giả sẽ lấy ví dụ hàm f là hàm tuyến tính của X có dạng:</li>
+</ol>
+<p><span class="math display">\[\begin{align}
+f(X) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_p X_p
+\end{align}\]</span></p>
+<p>Hàm bên trên là hàm tuyến tính, một loại hàm vô cùng phổ biến và cơ bản mà hầu hết người xây dựng mô hình phải biết khi xây dựng hàm f. Một khi chúng ta giả thiết rằng hàm f là hàm tuyến tính</p>
 
 </div>
 </div>
